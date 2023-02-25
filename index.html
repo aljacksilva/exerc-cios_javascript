@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Calcule seu IMC</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+  <section class="container">
+    <h1>Calcule seu IMC</h1>
+    <h2></h2>
+    <form action="/" id="form" method="post">
+      <label for="peso">Peso</label>
+      <input type="text" id="peso" name="peso">
+      <label for="altura">Altura</label>
+      <input type="text" id="altura" name="altura">
+      <button>Enviar</button>
+    </form>
+    
+    <div id="resultado"></div>
+
+    <!-- <div class="paragrafos">
+      <p>looking at its layout. The point of using Lorem Ipsum</p>
+      <p>desktop publishing packages and web page editors</p>
+      <p>and a search for 'lorem ipsum' will uncover many</p>
+      <p>1500s, when an unknown printer took a galley of</p>
+      <p>desktop publishing software like Aldus PageMaker</p>
+    </div> -->
+  </section>
+
+  <section class="container">
+    <h1>Timer</h1>
+    <p class="relogio">00:00:00</p>
+    <p>
+      <button class="iniciar">iniciar</button>
+      <button class="pausar">pausar</button>
+      <button class="zerar">zerar</button>
+    </p>
+  </section>
+
+  <section class="container">
+    <h1>Lista de tarefas</h1>
+    <p>
+      <input type="text" class="input-tarefa">
+      <button class="btn-tarefa">Adicionar tarefas</button>
+
+      <ul class="tarefas"></ul>
+    </p>
+  </section>
+
+  <section class="container">
+    <h1>Calculadora</h1>
+    <table class="calculadora">
+      <tr>
+        <td colspan="4"><input type="text" class="display"></td>
+      </tr>
+
+      <tr>
+        <td><button class="btn btn-clear">C</button></td>
+        <td><button class="btn btn-num">(</button></td>
+        <td><button class="btn btn-num">)</button></td>
+        <td><button class="btn btn-num">/</button></td>
+      </tr>
+
+      <tr>
+        <td><button class="btn btn-num">7</button></td>
+        <td><button class="btn btn-num">8</button></td>
+        <td><button class="btn btn-num">9</button></td>
+        <td><button class="btn btn-num">*</button></td>
+      </tr>
+
+      <tr>
+        <td><button class="btn btn-num">4</button></td>
+        <td><button class="btn btn-num">5</button></td>
+        <td><button class="btn btn-num">6</button></td>
+        <td><button class="btn btn-num">+</button></td>
+      </tr>
+
+      <tr>
+        <td><button class="btn btn-num">1</button></td>
+        <td><button class="btn btn-num">2</button></td>
+        <td><button class="btn btn-num">3</button></td>
+        <td><button class="btn btn-num">-</button></td>
+      </tr>
+
+      <tr>
+        <td><button class="btn btn-num">.</button></td>
+        <td><button class="btn btn-num">0</button></td>
+        <td><button class="btn btn-del">&laquo;</button></td>
+        <td><button class="btn btn-eq">=</button></td>
+      </tr>
+    </table>
+      
+  </section>
+
+  <section class="container">
+
+    <h1>Formulário de cadastro</h1>
+    <ul>
+      <li>Nenhum campo podeestar vazio</li>
+      <li>Usuário só poderá conter letras e/ou números</li>
+      <li>Usuário deverá ter entre 3 e 12 caracteres</li>
+      <li>Senha precisar ter entre 6 a 12 caracteres</li>
+    </ul>
+
+    <form action="/" method="POST" class="formulario">
+      <label>Nome</label>
+      <input type="text" class="nome validar">
+      <label>Sobrenome</label>
+      <input type="text" class="sobrenome validar">
+      <label>CPF</label>
+      <input type="text" class="cpf validar">
+      <label>Usuário</label>
+      <input type="text" class="usuario validar">
+      <label>Senha</label>
+      <input type="password" class="senha validar">
+      <label>Repetir Senha</label>
+      <input type="password" class="repetir-senha validar">
+      <button type="submit">Enviar</button>
+    </form>
+
+  </section>
+
+  <script src="./assets/js/validaCPF.js"></script>
+  <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
